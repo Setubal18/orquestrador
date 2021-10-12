@@ -11,17 +11,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';">
   <meta name="importmap-type" content="systemjs-importmap" />
 
-  <script type="systemjs-importmap">
-    {
-      "imports": {
-        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
-        "react": "https://unpkg.com/react@17/umd/react.production.min.js",
-        "react-dom": "https://unpkg.com/react-dom@17/umd/react-dom.production.min.js",
-        "react-router-dom": "https://unpkg.com/react-router-dom@5.2.0/umd/react-router-dom.min.js",
-        "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js",
-        "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.5.1/dist/vue-router.min.js"
-      }
-    }
+  <script type="systemjs-importmap" src="https://demo-orquestrador-spa.s3.us-east-2.amazonaws.com/importmap.json">
   </script>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
   <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script>
@@ -36,7 +26,6 @@
         "@seven/about-react": "//localhost:8601/seven-about-react.tsx",
         "@seven/about-reactjs": "//localhost:8602/about-reactjs-seven.js",
         "@seven/main-angular": "//localhost:4201/main.js"
-
       }
     }
   </script>
